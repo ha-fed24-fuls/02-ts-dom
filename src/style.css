@@ -107,3 +107,8 @@ button {
 		color: blue;
 	}
 }
+
+.hide {
+	/* opacity, visibility, display */
+	visibility: hidden;
+}

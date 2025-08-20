@@ -1,5 +1,6 @@
 import './style.css'
 import { changeColor } from './changeColor.ts'
+import { visibility } from './visibility.ts'
 
 // tag, class, id
 const button: HTMLButtonElement = document.querySelector('button')!
@@ -17,3 +18,6 @@ button.addEventListener('click', callback)
 
 // Övning 2.2
 changeColor()
+
+// Övning 2.3
+visibility()
