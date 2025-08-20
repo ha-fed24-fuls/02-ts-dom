@@ -3,11 +3,13 @@ import './style.css'
 // tag, class, id
 const button: HTMLButtonElement = document.querySelector('button')!
 const result: HTMLParagraphElement = document.querySelector('#result')!
-// console.log(button, result)
-const message: string = 'Get coding!'
+
+let clickCount: number = 0
 
 type EventHandler  = () => void;
 const callback: EventHandler = () => {
-	result.innerText = message
+	clickCount++
+	result.innerText = `Du har klickat ${clickCount} gånger!`
 }
 button.addEventListener('click', callback)
+
