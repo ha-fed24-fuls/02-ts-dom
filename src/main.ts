@@ -1,4 +1,5 @@
 import './style.css'
+import { changeColor } from './changeColor.ts'
 
 // tag, class, id
 const button: HTMLButtonElement = document.querySelector('button')!
@@ -13,3 +14,6 @@ const callback: EventHandler = () => {
 }
 button.addEventListener('click', callback)
 
+
+// Övning 2.2
+changeColor()
